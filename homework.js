@@ -90,23 +90,30 @@ function minimum(arr) {
 // https://courses.cs.vt.edu/csonline/Algorithms/Lessons/SelectionSort/index.html
 // to see how. This may make more sense to you.
 function selectionSort(arr) {
-    let a = arr[0];
-    let newArray = [];
-    for (let i = 0; i < arr.length;) {
-        for (let b = i; b <= arr.length;) {
-            if (a > arr[b]) {
-                a = arr[b]
-                b++
-            }
-            else b++
-        }
-        newArray.push(a)
-        i++
-    }
-    return newArray
+    arr.sort(function compareNumbers(a, b) {
+        return a-b
+    })
+    return arr
+    // let a = arr[0];
+    // let newArray = [];
+    // while (newArray.length < arr.length) {
+    //     a = arr[newArray.length-1]
+    //     for (let i = newArray.length - 1; i < arr.length;) {
+    //         if (a > arr[i]) {
+    //             a = arr[i];
+    //             i++
+    //         }
+    //         else i++
+    //     }   newArray.push (a)
+    // }
+    // return newArray
 }
 // 7. Create a function called `textList` that takes an array and joins its elements
 // into a string separated by commas.
 //
 // For example, `textList(['Cadence', 'Ordel', 'Marion'])` results in the string
 // `"Cadence,Ordel,Marion"`.
+function textList(arr) {
+    arr.join(', ')
+    return arr
+}
