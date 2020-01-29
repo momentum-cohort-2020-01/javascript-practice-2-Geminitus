@@ -90,9 +90,11 @@ function minimum(arr) {
 // to see how. This may make more sense to you.
 function selectionSort(arr) {
     arr.sort(function compareNumbers(a, b) {
-        return a-b
+        return a - b
     })
+    console.log(arr)
     return arr
+}
     // let a = arr[0];
     // let newArray = [];
     // while (newArray.length < arr.length) {
@@ -106,7 +108,7 @@ function selectionSort(arr) {
     //     }   newArray.push (a)
     // }
     // return newArray
-}
+
 // 7. Create a function called `textList` that takes an array and joins its elements
 // into a string separated by commas.
 //
