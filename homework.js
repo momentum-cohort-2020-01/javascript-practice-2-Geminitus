@@ -19,7 +19,6 @@ function remove(arr, rm) {
     console.log("this is the finished array [" + newArray + "].")
     return newArray
 }
-remove(['Cadence', 'Ordel', 'Marion'], 'Marion')
 // 2. Revisit your "remove" function. Make sure that it does not change the original
 // array but instead returns a new array.
 
